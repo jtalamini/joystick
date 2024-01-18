@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity"
+    android:padding="16dp">
+
+    <com.example.joystick.JoystickView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/joystickView_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="32dp"
+        custom:JV_borderWidth="10dp"
+        custom:JV_backgroundColor="#00BCD4"
+        custom:JV_borderColor="#2196F3"
+        custom:JV_buttonColor="#3F51B5"/>
+
+
+    <com.example.joystick.JoystickView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/joystickView_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="32dp"
+        custom:JV_borderWidth="10dp"
+        custom:JV_backgroundColor="#FFC107"
+        custom:JV_borderColor="#FF5722"
+        custom:JV_buttonColor="#E91E63"/>
+
+</RelativeLayout>
